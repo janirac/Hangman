@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hangman Game</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <form action="/play" method="POST">
+        <p>{{ player_guesses }}</p>
+        <input type="text" name="user_guess" placeholder="Enter a letter to guess"> 
+        <button type="submit">Guess</button>
+    </form>
+    <p>{{ message_to_user }}</p>
+    <p>{{ letters_guessed }}</p>
+</body>
+</html>
